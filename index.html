@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flipper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+   <div class="grid">
+        <div class="game-env">
+            <div class="shadow"></div>
+            <div class="game-cont">
+                <h1 class="display-4">Coin Fliper</h1>
+                <div class="coin-img">
+                    <img src="img/COIN ICON.png" id='img' class='head' alt="">
+                </div>
+                <div class="game-inp">
+                    <div class="clear-fix">
+                        <div class="float-left">
+                            <button class="coin-inp-btn">
+                            Coins No
+                            <input type="text" id='coininp' class='inp' value='2' class="form-control">
+                            </button>
+                        </div>
+                        <div class="float-right">
+                           <button class="tossed-btn btn-danger">Start Tossed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coin-scores">
+            <table class="table table-striped table-hover table-dark">
+                <div class="well well-lg bg-dark p-2 text-left">Coin Flipper Game Result</div>
+                <thead>
+                    <tr>
+                        <th>Heads</th>
+                        <th>Tails</th>
+                        <th>Total Tossed</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td id='hscr'></td>
+                        <td id='tscr'></td>
+                        <td id='ttlscr'></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+   </div> 
+
+   <!-- overlay -->
+   <div class="overlay">
+       <div class="coin-anime">
+           <img src="img/COIN ICON.png" id='img' class='head' alt="">
+           <br>
+           <h3 class="display-4">Coin Flipper</h3>
+       </div>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>
