@@ -168,3 +168,59 @@ body{
         left:20%;
     }
 }
+
+@media(max-width:992px){
+    .grid{
+    grid-template-columns:1fr;
+    grid-template-areas: 'gameenv' 'scores';
+    }
+    .game-env{
+    width:350px;
+    height:80vh;
+    background: #070707;
+    position: absolute;
+    top:50%;
+    margin:0px auto;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color:#fff;
+    grid-area: gameenv;
+    }
+    .game-env .game-cont .coin-img img{
+    width:250px;
+    position: absolute;
+    left:20%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin:0px auto;
+    }
+    .game-env .game-cont .coin-inp-btn{
+    display: flex;
+    color:#fff;
+    width:70%;
+    margin:0px auto;
+    margin-bottom:20px;
+    margin-left:30%;
+    }
+    .game-env .game-cont .tossed-btn{
+        width:100%;
+        margin:0px auto;
+    margin-left:-60%;
+    }
+    .coin-scores{
+    grid-area: scores;
+    height:auto;
+    width:350px;
+    height:70vh;
+    position: absolute;
+    top:130%;
+    margin:0px auto;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color:#fff;
+    }
+}
